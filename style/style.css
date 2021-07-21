@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+/*HEADER - MENU*/
+.header-container{
+    background: #072C50;
+    min-height: 15vh;
+    border-bottom: 2px solid #333; 
+}
+
+.content-header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+
+.div-logo{
+    margin-right: 30px;
+}
+
+.div-logo img{
+    width: 250px;
+    height: 100%;
+}
+
+.nav-container{
+    display: flex;
+    flex: 0 0 60%;
+    justify-content: end;
+}
+
+.nav-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    color: #fff;
+}
+.nav-container a:hover{
+    border-bottom: 3px solid #a78000;
+}
+/*HEADER IMAGE e CONTENT*/
+.content-background-image{
+    background: url(../style/images/header-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+.content-background-image div{
+    width: 50%;
+    margin: 0 auto;
+   
+}
+.content-background-image h1{
+    background: #072c50af;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 10px;
+    color: #bd8b00;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
+
+/*SOBRE MIM*/
+#sobremim{
+    width: 80%;
+    margin: 0 auto;
+}
+#sobremim h1{
+    font-size: xx-large;
+}
