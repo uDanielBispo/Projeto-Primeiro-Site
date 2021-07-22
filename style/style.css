@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 *{
     padding: 0;
     margin: 0;
@@ -6,36 +9,46 @@
     box-sizing: border-box;
     font-size: 1rem;
     font-family: Helvetica, sans-serif;
-    
 }
-input{
+body{
+    overflow-x: hidden;
+    background: #344b62;
+}
+
+input, textarea{
     outline: none;
 }
-h1{
-    font-size: 1.5rem;
+h1, h2{
+    font-size: 40px;
+    margin: 5vh 0;
+    text-align: center;
+}
+.h1-header{
+    font-size: 40px;
 }
 h2{
-    font-size: large;
+    font-size: 20px;
 }
-p{
+p,blockquote{
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 20px;
+    max-width: 80%;
+    margin: auto;
 }
-blockquote{
-    text-align: justify;
-}
+
 /*HEADER - MENU*/
 .header-container{
     background: #072C50;
     min-height: 15vh;
-    border-bottom: 2px solid #a78000;  
+    border-bottom: 2px solid  #bd8b00; 
 }
 .all-content-menu{
  
-    border-bottom: 2px solid #a78000; 
+    
 }
 .content-header{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +69,7 @@ blockquote{
     flex-wrap: wrap;
     flex: 1 1;
     justify-content: end;
+   
 
 }
 .nav-container a{
@@ -63,17 +77,21 @@ blockquote{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex: 1 1 ;
+    flex: 1 1;
+    width: 100%;
     color: #fff;
+
 }
 .nav-container a:hover{
-    border-bottom: 3px solid #a78000;
+    border-bottom: 3px solid  #bd8b00;
 }
 .nav-container a p{
     flex: 1 1;
     text-align: center;
-    padding: 5px;
+    
+
 }
+
 .mobile-menu {
     cursor: pointer;
     display: none;
@@ -86,7 +104,6 @@ blockquote{
     margin: 8px;
     transition: .3s;
 }
-
 @media (max-width: 999px){
     body{
         overflow-x: hidden;
@@ -95,10 +112,9 @@ blockquote{
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 30vw;
+        width: 50vw;
         height: 92vh;
         background:  #072C50;
-        border-left: 3px solid #a78000;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -116,11 +132,8 @@ blockquote{
     }
     .nav-container a p:hover{
         text-decoration: underline;
+        color: #bd8b00;
     }
-}
-@media (max-width: 409px) {
-
-    
 }
 .nav-container.active{
     transform: translateX(0);
@@ -150,44 +163,191 @@ blockquote{
     background: url(../style/images/header-img.jpg) no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 92vh;
+    height: 91vh;
     display: flex;
     align-items: center;
 }
 .content-background-image div{
-    width: 50%;
+    max-width: 90%;
     margin: 0 auto;
    
 }
 .titulo-content{
     background: #072c50af;
     box-shadow: 5px 5px 10px #000;
-    border-radius: 10px;
     color: #bd8b00;    
-    font-size: xx-large;
     padding: 20px;
+   
 }
 
+@media (max-width: 360px) {
+    .content-background-image h1{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    p{
+        line-height: 1.3;
+    }
+}
 
 
 .content-background-image h1{
     text-align: center;
     padding-bottom: 20px;
 }
-.div-search{
-    margin: 0;
-}
-/*ELETRICIDADE*/
+
+
+/*MAIN*/
 .main-container{
+    width: 80%;
+    margin: 10vh auto;
+    padding: 40px;
+    color: #072C50;
+    background: #fff;
+}
+.sobre-eletricidade h1{
+    border-bottom: 2px solid #bd8b00;
+}
+.sobre-eletricidade h1, h2{
+    text-align: center;
+  
+}
+/*SOBRE*/
+#sobre h1{
+    text-align: center;
+    border-bottom: 2px solid #bd8b00;
+    margin-top: 10vh;
+}
+
+/*FOOTER*/
+
+.footer-container{
+    background: #072C50;
+    border-top: 2px solid #bd8b00; 
+    color: white;
+    margin-top: 10vh ;
+
+}
+.footer-container h1{
+    width: 80%;
+    border-bottom: 2px solid #bd8b00; 
+    margin: 10vh auto 5vh;     
+}
+.form{
+    display: flex;
+    flex-direction: column;
     width: 60%;
     margin: 0 auto;
 }
 
-.main-container h1{
-    margin: 30px 0;
+.field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
 }
-.main-container h2{
-    margin: 15px 0;
+textarea{
+    height: 150px;
+}
+.enviar{
+    padding: 5px;
 }
 
-/*SOBRE MIM*/
+/*REDES SOCIAIS*/
+.footer-social-icons{
+    text-align: center;
+    padding-bottom: 20vh;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #072C50;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-github:hover {
+    background-color: #333;
+}
