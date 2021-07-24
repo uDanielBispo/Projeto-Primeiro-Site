@@ -29,7 +29,7 @@ h1, h2{
 h2{
     font-size: 20px;
 }
-p,blockquote{
+.sobre-eletricidade p,#sobre p ,blockquote{
     text-align: justify;
     line-height: 1.8;
     font-size: 20px;
@@ -39,17 +39,13 @@ p,blockquote{
 
 /*HEADER - MENU*/
 .header-container{
-    background: #072C50;
-    min-height: 15vh;
+    background: #072C50;  
     border-bottom: 2px solid  #bd8b00; 
 }
-.all-content-menu{
- 
-    
-}
 .content-header{
-    width: 95%;
-    margin: 0 auto;
+    border-bottom: 2px solid  #333; 
+    
+    padding: 0 5% ;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -104,7 +100,7 @@ p,blockquote{
     margin: 8px;
     transition: .3s;
 }
-@media (max-width: 999px){
+@media (max-width: 1125px){
     body{
         overflow-x: hidden;
     }
@@ -180,7 +176,7 @@ p,blockquote{
    
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
     .content-background-image h1{
         text-align: center;
         padding-bottom: 20px;
@@ -190,7 +186,11 @@ p,blockquote{
         font-size: 1.5rem;
     }
     p{
+        text-align: left;
         line-height: 1.3;
+        margin: 0 ;
+        max-width: 100%;
+       
     }
 }
 

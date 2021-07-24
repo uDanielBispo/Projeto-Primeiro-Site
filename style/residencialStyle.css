@@ -1,0 +1,86 @@
+h1{
+    border-bottom: 2px solid #bd8b00;
+}
+p, blockquote{
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 20px;
+    margin: auto 0;
+}
+/*HEADER*/
+.content-header{
+
+}
+.div-logo{
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.div-logo1{
+    margin: 0 auto; 
+}
+.div-logo1 img{
+    width: 250px;
+    
+}
+/*CONTENT*/
+.all{
+    background: #fff;
+    width: 80%;
+    padding: 40px;
+    margin: 10vh auto;
+    color: #072C50;
+}
+.all-residential p, blockquote{
+    margin: 0 ;
+    max-width: 100%;
+}
+.p-residential{
+    display: flex;
+    text-align: justify;
+}
+.ex-qdfl{
+    width: 50%;
+    padding: 10px;
+}
+
+@media (max-width: 1216px) {
+    .p-residential{
+        display: inline-block;
+        text-align: center;
+    }
+    .all-residential p{
+        
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .ex-qdfl{
+        width: 80%;
+        padding: 0;
+    }
+    
+}
+/*LISTA*/
+.all{
+    display: grid;
+
+}
+.input-list{
+    padding: 5px 0;
+    margin-top: 5px;
+}
+#verificar{
+    margin: 5px auto;
+    padding: 5px;
+    width: 100%;
+}
+
+/*FOOTER*/
+#contato{
+    background: #072C50;
+    border-top: 2px solid #bd8b00;
+    color: #fff;
+}
+#contato h1{
+    width: 80%;
+    margin: 10vh auto 5vh; 
+}
