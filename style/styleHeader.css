@@ -1,0 +1,127 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header .carousel{
+    background-color: #315b85;
+}
+/*LOGO*/
+.logo-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #072C50;
+}
+.logo-header{
+    width: 300px;
+    transition: .5s;
+}
+
+/*NAV PRIMARY LINKS*/
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid #bd8b00;
+    border-bottom: 3px solid #bd8b00;
+    padding: 0 30px;
+}
+
+.nav-links-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -2px;
+    padding: 0;
+}
+
+.nav-links{
+    display: flex;
+    color: #666;
+    padding: 30px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-links:hover{
+    border-bottom: 2px solid #072C50;
+    color: #072C50;
+}
+
+/*NAV PRIMARY FORM*/
+#nav-search, #btn {
+    outline: none;
+    padding: 5px;
+    margin: 10px;
+}
+#nav-search{
+    border: 1px solid #c7c7c7;
+}
+#nav-search:focus{
+    border-bottom: 2px solid #072C50;
+}
+
+#btn{
+    border: 2px solid transparent;
+    background-color: #072C50;
+    color: #fff;
+    transition: .5s;
+}
+
+#btn:hover{
+    border-bottom: 3px solid #bd8b00;
+    cursor: pointer;
+}
+
+
+/*LARGE SCALE*/
+@media (min-width: 1050px){
+    .nav-links{
+        margin-right: 30px;
+    }
+}
+
+/*TABLET*/
+@media (max-width: 850px){
+    .nav-bar{
+        justify-content: center;
+    }
+    .nav-links{
+        padding: 15px;
+    }
+    .nav-links:focus,.nav-links:hover {
+        color: #072C50;
+        border: none;
+    }
+}
+
+/*CELPHONE*/
+@media (max-width: 600px){
+    .nav-bar{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav-links-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;                        
+    }
+    .nav-links{
+        padding: 15px;
+    }
+    .logo-header{
+        width: 250px;
+    }
+    .nav-search-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links:focus,.nav-links:hover {
+        color: #072C50;
+        border: none;
+    }
+}

@@ -1,0 +1,184 @@
+/*Padronizando o fontsize*/
+p,blockquote{
+    font-size: 18px;
+}
+@media (max-width: 800px) {
+    p,blockquote{
+        font-size: 15px;
+    }
+}
+/*O QUE SOMOS*/
+
+article h1{
+    text-align: center;
+    margin: 5vh 0;
+}
+main{
+    background-color: #315b85;
+    padding: 1vh 0; 
+}
+.article-content{
+    background-color: #fff;
+    text-align: justify;
+    width: 90vw;
+    margin: 10vh auto;
+    padding: 5vh;
+    border: 2px solid #555;
+}
+.article-img{
+    float: right;
+    width: 45vw;
+    max-height: 500px; 
+    margin: 10px ;
+}
+.article-content ul li, .processo ul li{
+    list-style-type:square;
+}
+ a, p a{
+    text-decoration: none;
+    color: #41a0ff;
+}
+ a:hover, p a:hover{
+    color: #bd8b00;
+}
+
+/*NOSSO TIME*/
+.our-team{
+    margin: 30vh auto 0 ;
+    justify-content:center; 
+}
+
+
+.our-team div{
+    text-align: center;
+    
+}
+
+.person{
+    width: 35vh;
+    
+    transition: .5s;
+}
+.our-team-div{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.our-team-div-person{
+    margin: 5px;
+    padding-top: 10px;
+    background-color: #fff;
+    border: 3px solid #bd8b00;
+    
+}
+
+/*AJUSTES PARA O OUR TEAM*/
+@media (min-width: 1400px){
+    .person{
+        width: 40vh;
+    }
+}
+
+@media (max-width: 1200px){
+    .person{
+        width: 30vh;
+    }
+    
+}
+
+@media (max-width: 1020px){
+    .person{
+        width: 28vh;
+    }
+}
+
+@media (max-width: 940px){
+    .person{
+        width: 24vh;
+    }
+}
+
+@media (max-width: 830px){
+    .our-team-div{
+        display: block;
+        justify-content: center;
+        
+    }
+    .person{
+        width: 40vh;
+    }
+    .news-letter form{
+        width: 100%;
+    }
+}
+
+
+/*NEWS LETTER*/
+.news-letter{
+    text-align: center;
+   
+}
+.news-letter h1{
+    margin: 10vh 0 5vh;
+}
+.news-letter form{
+    display: flex;
+    border: 2px solid #bd8b00;
+    margin: 0 auto 10vh;
+    width: 60%;
+    transition: .5s;
+}
+.news-letter form #inscrever-se, .news-letter form #email{
+    border: none;
+}
+.news-letter form #email{
+    flex: 1 1;
+    padding: 0 10px;
+    outline: none;
+}
+.news-letter form #inscrever-se {
+   
+    background-color: #bd8b00;
+    color: #fff;
+    padding: 5px ;
+    margin: 0;
+    transition: .5s;
+}
+.news-letter form #inscrever-se:hover{
+    background-color: #896400;
+} 
+
+/*AJUSTES PARA NEWS LETTER*/
+@media (max-width: 600px){
+    .person{
+        width: 100%;
+    }
+    .news-letter form{
+        width: 100%;
+    }
+    .news-letter form #email{
+        flex: 1 1;
+        width: 50%;
+    }
+    .news-letter form #inscrever-se {
+        flex: 1 1;
+        font-size: 11px; 
+    }
+    .article-img{
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: auto;
+     }
+}
+
+/*ORÇAMENTO NO COMPROMISSES*/
+.orçamento-nocompromisses{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 50px;
+    margin-bottom: 20vh;
+}

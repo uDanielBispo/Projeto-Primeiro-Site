@@ -7,8 +7,19 @@ let total = 0;
 function verificar(){
 
     if(preço.value.length != 0 && quantidade.value.length != 0 && material.value.length != 0){
-        total += Number(preço.value*quantidade.value);
-        resposta.innerHTML += `${material.value}: ${preço.value} x ${quantidade.value} = ${preço.value*quantidade.value} preço total: ${total}<br>`
+        
+        total +=   parseFloat(Number(preço.value*quantidade.value).toFixed(2)) 
+
+        resposta.innerHTML += `${material.value}: R$${preço.value} x R$${quantidade.value} = ${preço.value*quantidade.value} 
+        <br> Preço total: R$${total} <br><br>`
+
+        material.value = ''
+        material.focus()
+
     }
     else{alert('Preencha os campos')}
+
+
+
+   
 } 

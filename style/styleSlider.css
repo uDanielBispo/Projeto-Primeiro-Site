@@ -1,0 +1,108 @@
+ .carousel-inner{
+    height: 70vh;
+}
+.carousel-caption{
+    top: 10%;
+    transition: .5s;
+}
+.carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    transition: .5s;
+}
+.carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #fff;
+    transition: .5s;
+}
+.main-btn{
+    background-color: #072C50;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+.main-btn:hover{
+    text-decoration: none;
+    border-bottom: 3px solid #bd8b00;
+    color: #FFF;
+}
+
+/*LARGE SCALE*/
+@media (min-width: 1200px){
+    .carousel-inner{
+        height: 80vh;
+    }
+    
+}
+
+/*TABLET*/
+@media (max-width: 900px){
+    .carousel-inner{
+        height: 60vh;
+    }
+    .carousel-caption h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/*CELPHOONE*/
+@media (max-width: 600px){
+    .carousel-inner{
+        height: 50vh;
+
+    }
+    .carousel-caption  h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .carousel-caption  p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .carousel-caption{
+        top: 5%;
+    }
+}
+
+@media (max-width: 458px){
+    .main-btn{
+        padding: 2px;
+    }
+    .carousel-caption  h2{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .carousel-caption  p{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .carousel-caption{
+        top: 1%;
+    }
+}
+
+@media (max-width: 340px){
+    .main-btn{
+        padding: 2px;
+    }
+    .carousel-caption  h2{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .carousel-caption  p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .carousel-caption{
+        top: 1%;
+    }
+
+    
+}

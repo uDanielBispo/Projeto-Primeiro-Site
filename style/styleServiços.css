@@ -1,0 +1,60 @@
+/*PLANTA*/
+#planta-baixa{
+    text-align: center;
+}
+.ex-planta{
+    display: block;
+    width: 300px;   
+    margin: 5px auto;
+    transition: .5s;
+}
+.ex-planta:hover{
+    border: 3px solid #072C50;
+    width: 400px;  
+}
+
+.plantas-img{
+    margin-top: 30px; 
+}  
+@media (min-width: 1200px) {
+    .ex-planta{
+        display: inline-block;
+    }
+    .ex-planta:hover{
+        border: 3px solid #072C50;
+        width: 30vw;  
+    }  
+    .plantas-img{
+        width: 100%;
+    }
+    
+
+}
+@media (max-width: 400px) {
+    .ex-planta{
+        width: 100%;
+        
+    }
+}
+
+/*LISTA*/
+.all{
+    display: grid;
+    max-width: 800px;
+    margin: auto;
+}
+.all h1{
+    text-align: center;
+    padding: 1vh 0;
+    margin: 4vh 0;
+    border-bottom: 3px solid #bd8b00;
+}
+.input-list{
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.all #btn{
+    margin: 5px auto;
+    padding: 5px;
+    width: 100%;
+}

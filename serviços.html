@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="/style/styleSlider.css">
     <link rel="stylesheet" href="/style/styleArticle.css">
     <link rel="stylesheet" href="/style/styleFooter.css">
-
-    <link rel="stylesheet" href="/style/styleResidencial.css">
+    <link rel="stylesheet" href="/style/styleServiços.css">
     <!--BOOTSTRAP LINK-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   
     <title>D.E.H. Daniel's Eletric Hints</title>
 </head>
 <body>
@@ -26,69 +24,96 @@
                 <ul class="nav-links-list">
                     <li><a href="/index.html" class="nav-links">Home</a></li>
                     <li><a href="/index.html#about" class="nav-links">Sobre</a></li>
-                    <li><a href="#residencial" class="nav-links">Residencial</a></li>
-                    <li><a href="/serviços.html#serviços" class="nav-links">Serviços</a></li>                </ul>
+                    <li><a href="/residencial.html" class="nav-links">Residencial</a></li>
+                    <li><a href="#lista" class="nav-links">Faça sua lista de preços</a></li>
+                </ul>
                 <form class="nav-search-form">
                     <input type="search" name="search" id="nav-search" placeholder="Search" autocomplete="off">
                     <input type="button" value="Search" id="btn">
                 </form>
               </nav>
         </section>
-    </header>
-    <main>
-        <section class="article-content">
-            <article class="article1" id="residencial">
-                <h1>Como funciona a rede elétrica de uma casa?</h1>
-                <div class="p-residential"> 
-                    <p>A energia é transmitida pelos postes com 2,8kV de tensão e transformada para as três fases com (127V/110V) cada. 
-                        Essa energia por sua vez chega na sua casa através do poste padrão, a partir disso sua residência deve conter os 
-                        equipamentos necessários para a segurança tanto dos cabos elétricos, como das pessoas residentes. Na seguinte imagem
-                        podemos ver um exemplo de quadro de distribuição de força e luz (QDFL).</p>
-                        <img src="/style/images/exemplo-qdfl.jpg" alt="Exemplo de quadro de distribuição" class="ex-qdfl">
+
+        <section class="carousel" id="serviços">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item1 active">
+                  <img src="/style/images/serviços-img.jpg" class="d-block w-100" alt="Exemplo de instalação">
+                  <div class="carousel-caption d-md-block">
+                    <h2>Algumas de nossas instalações</h2>
+                 
+                  </div>
                 </div>
+                <div class="carousel-item carousel-item2">
+                  <img src="/style/images/serviços-img1.jpg" class="d-block w-100" alt="Exemplo de instalação">
+                  <div class="carousel-caption d-md-block">
+                    <h2>Algumas de nossas instalações</h2>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item3">
+                  <img src="/style/images/serviços-img2.jpg" class="d-block w-100" alt="Exemplo de instalação">
+                  <div class="carousel-caption  d-md-block">
+                    <h2>Algumas de nossas instalações</h2>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </section>
+    </header>
 
-                <article id="nbr-5410" class="proteções">
-                    <h1>Proteção de circuitos e pessoas</h1>
-                    <p>Para um quadro executar a função de proteção de maneira eficaz, segundo a NBR-5410 e NR-10, ele precisa possuir disjuntores, dispositivo de proteção
-                        contra surto (DPS) e interruptor diferencial residual (IDR), estes componentes irão efetuar a devida proteção contra
-                        choques, raios e curtos.</p><p>
-                        A NBR-5410 diz:
-                        <blockquote>
-                            <q> 4.2.5.1 A instalação deve ser dividida em tantos circuitos quantos necessários, devendo cada circuito ser
-                                concebido de forma a poder ser seccionado sem risco de realimentação inadvertida através de outro circuito.</q>
-                        </blockquote>
-                    </p>
-                </article>
-                    
-                <article id="tomadas">
-                    <h1>Dimencionamento de Tomadas</h1>
-                    <p>Isto significa que a instalação vai depender da necessidade da residencia. Por exemplo o dimencionamento de tomadas:</p>
-                    <p><q>Nas cozinhas, copas, copas-cozinhas, área de serviço, lavanderias e locais semelhantes: prever uma tomada para cada 3,5 metro
-                            ou fração do perímetro, independente da área, e sobre o balcão da pia prever no mínimo duas tomadas; - Halls, corredores,
-                            subsolos, garagens, sótãos e varandas, pelo menos 1 tomada.</q></p>
-                </article>
 
-                <article id="iluminação">
-                    <h1>Dimencionamento de Ilumnação:</h1>
-                    <p>
-                        <q>Em cada cômodo ou dependência, no mínimo um ponto de luz, com 100 VA;</q>
-                        <br>
-                        <q>Em cômodos com área igual ou inferior a 6 m², no mínimo uma carga de 100 VA;</q>
-                        <br>
-                        <q>Em cômodos com área maior que 6 m², devemos prever 100 VA para os primeiros 6 m² + 60 VA para cada aumento de 4 m² inteiros.</q>
-                        <p><a href="#header">voltar ao topo</a></p>
-                    </p>
-                </article>
-            </article>
+    <main>
+        <section class="article1">
+            <section class="article-content">
+              <article id="planta-baixa">
+                <h1>Planta Baixa</h1> 
+                <p>Criamos a planta baixa para seu projeto e dimencionamos desde os conduites até as tomadas, iluminações e tomadas especificas.</p>
+                <p>Caso escolha o pacote de instalação completa a planta e as divisões de circuito saem gratuitamente.</p>
+                <h2>Alguns exemplos de nossas criações</h2>
+                <div class="plantas-img">
+                  <img src="/style/images/ex-planta1.jpg" alt="Exemplo de planta baixa" class="ex-planta">
+                  <img src="/style/images/ex-planta2.jpg" alt="Exemplo de planta baixa" class="ex-planta">
+                  <img src="/style/images/ex-planta3.png" alt="Exemplo de planta baixa" class="ex-planta">
+                </div>
+              </article>
+              <article class="processo">
+                <h1>Etapas do nosso trabalho</h1>
+                <p>O escritório/escola/eletrica D.E.H. tem etapas rigorosas para o fornecimento de serviços:</p>
+                <ul>
+                  
+                  <li><h2>Analise:</h2><p>Nessa etapa nós garantimos que compreendemos o pedido do cliente.</p></li>
+                  <li><h2>Protótipo</h2>Conferimos se estamos na mesma visão do nosso cliente, para entao iniciarmos o projeto.</li>
+                  <li><h2>Execução</h2><p>A partir deste momento criamos o pedido.</p></li>
+                  <li><h2>Entrega</h2><p>Depois dos testes e verificações fazemos uma apresentação do relatorio para o cliente.</p></li>
+                </ul>
+              </article>
+            </section>
+            
+            <section class="article-content" id="lista">
+              <section class="all">
+                <h1>Faça sua lista de materiais conosco</h1>
+                <input type="text" id="material" placeholder="Material" class="input-list">
+                <input type="number" id="quantidade" placeholder="Quantidade" class="input-list">
+                <input type="number" id="preço" placeholder="Preço R$00,00" class="input-list">
+                <input type="button" value="Verificar"  id="btn" onclick="verificar()">
+                <p id="resposta"></p>
+                <p><a href="#header">voltar ao topo</a></p>
+            </section>
+            </section>
         </section>
-        <section class="liked-residencial" id="cursos">
-            <h2>Gostou do conteúdo? compre nosso curso para ter acesso a muito mais!</h2>
-            <input type="button" value="COMPRAR" id="btn">
-          </section>
+      
     </main>
 
-     <!---------------------------------------------------------FOOTER------------------------------------------------------------------------------------>
-     <footer>
+  
+    <footer>
       <section class="contact-selection">
         <div class="contact-content" style="border: none;">
           <h1>Entre em contato</h1>
@@ -140,5 +165,7 @@
 
     <!--BOOTSTRAP SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <!--LISTA SCRIPT-->
+    <script src="/script/lista.js"></script>
+  </body>
 </html>

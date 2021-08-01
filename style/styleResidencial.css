@@ -1,0 +1,38 @@
+.proteções{
+    display: inline-block;
+}
+.p-residential{
+    display: flex;
+}
+.ex-qdfl{
+    float: right;
+    margin: 8px 10px ;
+    width: 400px;
+}
+.liked-residencial{
+    background: url(/style/images/background-contact.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5vh;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 9vh;
+}
+
+@media (max-width: 850px) {
+    .p-residential{
+        display: block;
+    }
+    .ex-qdfl{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }  
+}
+@media (min-width: 1300px) {
+    .ex-qdfl{
+        float: right;
+        width: 500px;
+    }
+
+}
